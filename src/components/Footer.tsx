@@ -2,8 +2,10 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Separator } from "@/components/ui/separator";
 import { Github, Twitter, Linkedin, Mail, ArrowUp } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 const Footer = () => {
+  const navigate = useNavigate();
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
@@ -53,10 +55,18 @@ const Footer = () => {
               <ul className="space-y-3">
                 <li>
                   <button 
-                    onClick={() => scrollToSection('home')}
+                    onClick={() => navigate('/')}
                     className="text-primary-foreground/80 hover:text-accent transition-colors cursor-pointer"
                   >
                     Home
+                  </button>
+                </li>
+                <li>
+                  <button 
+                    onClick={() => navigate('/about')}
+                    className="text-primary-foreground/80 hover:text-accent transition-colors cursor-pointer"
+                  >
+                    About
                   </button>
                 </li>
                 <li>

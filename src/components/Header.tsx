@@ -1,9 +1,11 @@
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const navigate = useNavigate();
 
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
@@ -26,10 +28,16 @@ const Header = () => {
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
             <button 
-              onClick={() => scrollToSection('home')}
+              onClick={() => navigate('/')}
               className="text-foreground hover:text-accent transition-colors"
             >
               Home
+            </button>
+            <button 
+              onClick={() => navigate('/about')}
+              className="text-foreground hover:text-accent transition-colors"
+            >
+              About
             </button>
             <button 
               onClick={() => scrollToSection('products')}
@@ -80,10 +88,16 @@ const Header = () => {
           <div className="md:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1 bg-background border-t border-border">
               <button 
-                onClick={() => scrollToSection('home')}
+                onClick={() => navigate('/')}
                 className="block px-3 py-2 text-foreground hover:text-accent transition-colors w-full text-left"
               >
                 Home
+              </button>
+              <button 
+                onClick={() => navigate('/about')}
+                className="block px-3 py-2 text-foreground hover:text-accent transition-colors w-full text-left"
+              >
+                About
               </button>
               <button 
                 onClick={() => scrollToSection('products')}
