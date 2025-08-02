@@ -25,10 +25,10 @@ const Footer = () => {
             {/* Company Info */}
             <div className="lg:col-span-1">
               <div className="text-3xl font-bold mb-4 bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
-                TechFlow
+                LogiByte
               </div>
               <p className="text-primary-foreground/80 mb-6 leading-relaxed">
-                Transforming businesses through innovative software solutions. 
+                Logic in every byte. Transforming businesses through innovative software solutions. 
                 We build the future, one line of code at a time.
               </p>
               <div className="flex space-x-4">
@@ -132,7 +132,7 @@ const Footer = () => {
         {/* Bottom Footer */}
         <div className="py-6 flex flex-col md:flex-row items-center justify-between">
           <div className="text-primary-foreground/80 text-sm mb-4 md:mb-0">
-            © 2024 TechFlow. All rights reserved. | Privacy Policy | Terms of Service
+            © 2024 LogiByte. All rights reserved. | Privacy Policy | Terms of Service
           </div>
           
           <Button 

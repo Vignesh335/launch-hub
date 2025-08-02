@@ -31,7 +31,7 @@ const Hero = () => {
           </h1>
           
           <p className="text-xl lg:text-2xl mb-8 text-gray-200 max-w-3xl mx-auto leading-relaxed">
-            We create cutting-edge software solutions that transform businesses and drive digital innovation. 
+            Logic in every byte. We create cutting-edge software solutions that transform businesses and drive digital innovation. 
             Partner with us to build tomorrow's technology today.
           </p>
 
